@@ -95,7 +95,7 @@ st.sidebar.caption("NASA C-MAPSS Fleet Monitoring")
 
 nav_page = st.sidebar.radio(
     "Navigation",
-    ["Engine Diagnostics", "Model Benchmarks", "Project Methodology & FAQ"],
+    ["Engine Diagnostics", "Model Benchmarks", ],
     index=0
 )
 
