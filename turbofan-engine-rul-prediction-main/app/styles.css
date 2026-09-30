@@ -1,0 +1,207 @@
+/* Turbofan Maintenance Console - Practical Industrial Theme */
+
+/* Clean sans typography for UI */
+html, body, [class*="css"] {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* Monospace numbers for telemetry and cycle readings */
+.mono-num {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+}
+
+/* Metric Display Cards: Flat, calm, information-first, no heavy shadows */
+.metric-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+}
+
+.metric-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.metric-value {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.metric-sub {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.plain-note {
+    font-size: 0.78rem;
+    color: #475569;
+    background-color: #f8fafc;
+    border-left: 2px solid #94a3b8;
+    padding: 4px 8px;
+    margin-top: 6px;
+    border-radius: 0 2px 2px 0;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.status-healthy {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+.status-warning {
+    background-color: #ffedd5;
+    color: #9a3412;
+    border: 1px solid #fdba74;
+}
+
+.status-critical {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+/* Operational Progress Bar */
+.rul-progress-container {
+    width: 100%;
+    height: 7px;
+    background-color: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.rul-progress-fill-healthy {
+    height: 100%;
+    background-color: #16a34a;
+}
+
+.rul-progress-fill-warning {
+    height: 100%;
+    background-color: #ea580c;
+}
+
+.rul-progress-fill-critical {
+    height: 100%;
+    background-color: #dc2626;
+}
+
+/* Fleet Triage Pills */
+.pill-badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 9999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.pill-all { background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+.pill-healthy { background-color: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.pill-warning { background-color: #ffedd5; color: #9a3412; border: 1px solid #fdba74; }
+.pill-critical { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+
+/* How It Works Explainer Box */
+.how-it-works-box {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+}
+
+.step-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 3px;
+    padding: 10px 14px;
+    height: 100%;
+}
+
+.step-num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2b5c8f;
+    margin-bottom: 2px;
+}
+
+.step-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.step-desc {
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.35;
+}
+
+/* Preset Demo Bar */
+.preset-container {
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 14px;
+    margin-bottom: 14px;
+}
+
+/* Section Dividers */
+.section-header {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+/* Clean Telemetry Table */
+.telemetry-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.telemetry-grid th {
+    text-align: left;
+    background-color: #f1f5f9;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+.telemetry-grid td {
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    font-size: 0.85rem;
+}
